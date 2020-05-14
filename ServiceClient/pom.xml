@@ -8,23 +8,25 @@
 		<version>2.2.7.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example</groupId>
-	<artifactId>EurekaServer</artifactId>
+	<groupId>com.example.serviceclient</groupId>
+	<artifactId>ServiceClient</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>EurekaServer</name>
-	<description>Demo project for Spring Boot</description>
+	<name>ServiceClient</name>
+	<description>Service Client Eureka</description>
 
 	<properties>
 		<java.version>1.8</java.version>
 		<spring-cloud.version>Hoxton.SR4</spring-cloud.version>
-		<!-- Downgrade in maven due to Unknown error as per Spring Boot 2.1.5  -->
-		<maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
 	</properties>
 
 	<dependencies>
 		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
 
 		<dependency>
